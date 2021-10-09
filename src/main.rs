@@ -89,7 +89,7 @@ fn main() {
     
     // if broker, spawn threads that each will execute and manage a new worker process
     if args.value_of("ptype").unwrap() == "broker" {
-        let n_workers = 8;
+        let n_workers = 16;
         let pool = ThreadPool::new(n_workers);
         for _ in 0..n_workers {
             pool.execute(|| spawn_child());

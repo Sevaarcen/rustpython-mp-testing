@@ -26,7 +26,7 @@ def test_function() -> int:
 
 
 if __name__ == '__main__':
-    num_workers = 8
+    num_workers = 16
     start_time = time.time()
 
     # run test twice from the top, both in python
